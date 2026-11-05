@@ -1,0 +1,26 @@
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+/zomato/profiles.yml
+/zomato/.user.yml
+
+# Generated dbt output and logs
+**/target/
+**/dbt_packages/
+**/logs/
+**/airflow/logs/
+
+# Python-generated files
+**/__pycache__/
+*.py[cod]
+
+# Generated review embeddings
+/ai/review_embeddings.parquet
+
+# Large local source datasets
+/data/*
+!/data/README.md
